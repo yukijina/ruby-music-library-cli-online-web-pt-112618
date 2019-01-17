@@ -64,7 +64,8 @@ class MusicLibraryController
     end 
     
     def list_songs_by_artist
-      
+      pus "Please enter the name of an artist:"
+      user_input = gets.chomp
     end 
     
   end  #the end of call method    
