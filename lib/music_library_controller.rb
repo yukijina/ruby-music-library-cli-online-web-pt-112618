@@ -84,8 +84,8 @@ class MusicLibraryController
       puts "Please enter the name of a genre:"
       user_input = gets.chomp
       binding.pry
-      
-      
+      sorted = Genre.all.map {|genre| genre.name}.sort
+      sorted.each.with_index(1) {|genre, index| puts "#{index}. #{genre}"}  
       
     end 
     
