@@ -19,8 +19,19 @@ class MusicLibraryController
     puts "What would you like to do?"
     
     case user_input
-    when
+    when "list songs"
       
+    when "list artists"
+      
+    when "list genres"
+      
+    when "list artist"
+        
+    when "list genre"
+          
+    when "play song"
+  
+    when "exit"
     end 
     
     
