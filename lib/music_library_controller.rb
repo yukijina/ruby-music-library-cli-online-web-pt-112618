@@ -56,11 +56,6 @@ class MusicLibraryController
           #puts "#{index}. #{song.artist} - #{song.name}.sort - #{song.genre}"
       #end
       
-      Song.all.each do |song|
-       song.each.with_index(1) do |s, index|
-          puts "#{index}. #{s.artist} - #{s.name}.sort - #{s.genre}"
-      end
-    
     
     
     end
