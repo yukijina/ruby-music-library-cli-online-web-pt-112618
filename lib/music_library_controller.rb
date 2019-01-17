@@ -42,16 +42,18 @@ class MusicLibraryController
     
     def list_songs
      binding.pry
-      songs = []
-      artists = []
-      genres = []
+      #songs = []
+      #artists = []
+      #genres = []
       tests = []
       lists = Song.all.each do |song|
-        songs << song.name
-        artists << song.artist.name
-        genres << song.genre.name
+        #songs << song.name
+        #artists << song.artist.name
+        #genres << song.genre.name
         tests += [song.name, song.artist.name, song.genre.name]
       end
+      
+      sorted = tests.each_slice(3) {
       
       #sorted = Song.all.map {|song| song.name}.sort
       songs.each.with_index(1) do |list, index|
