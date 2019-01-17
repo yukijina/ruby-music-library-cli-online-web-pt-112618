@@ -32,9 +32,8 @@ class MusicLibraryController
     when "play song"
   
     when "exit"
+    
     end 
-    
-    
     
   end 
   
