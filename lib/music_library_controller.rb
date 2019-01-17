@@ -64,7 +64,9 @@ class MusicLibraryController
 
     def list_artists
       make_a_list 
-      sorted_lists = lists.each_slice(3).map {|list| list}.sort
+    
+      sorted_lists = lists.each_slice(3).map {|list| list}
+      sorted_lists.map {|list|
       sorted_lists.each.with_index(1) do |list, index|
         puts "#{index}. #{list[1]} - #{list[0]} - #{list[2]}"
       end
