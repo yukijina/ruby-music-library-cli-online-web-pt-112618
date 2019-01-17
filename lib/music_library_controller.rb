@@ -23,7 +23,7 @@ class MusicLibraryController
       user_input = gets.chomp
       case user_input
       when "list songs"
-        songs 
+        Songs.all.map {|song| song.name}.sort
       when "list artists"
         artist
       when "list genres"
