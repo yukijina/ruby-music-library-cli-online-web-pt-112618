@@ -54,11 +54,7 @@ class MusicLibraryController
     end
 
     def list_artists
-      Artist.all.map {|artist| artist.name}.sort
-      sorted_lists.each.with_index(1) do |list, index|
-        puts "#{index}. #{list[1]} - #{list[0]} - #{list[2]}"
-      end
-      
+      Artist.all.map.with_index(1) {|artist, index| puts "#{index}. #{artist.name}"}.sort  
     end 
       
   end  #the end of call method    
