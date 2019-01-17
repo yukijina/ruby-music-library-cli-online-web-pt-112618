@@ -7,6 +7,8 @@ class MusicLibraryController
   end 
   
   def call 
+    user_input = ""
+    while
     puts "Welcome to your music library!"
     user_input = gets.chomp
     puts "To list all of your songs, enter 'list songs'."
