@@ -63,7 +63,10 @@ class MusicLibraryController
     end
 
     def list_artists
-      make_a_list 
+      # lists = []
+      # Song.all.each do |song|
+      #   lists += [song.name, song.artist.name, song.genre.name]
+      # end
     
       sorted_lists = lists.each_slice(3).map {|list| list}.sort
        sorted_lists.each.with_index(1) do |list, index|
