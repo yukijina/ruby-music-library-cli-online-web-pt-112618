@@ -76,8 +76,6 @@ class MusicLibraryController
           sorted_lists.each.with_index(1) do |list, index|
             puts "#{index}. #{list[0]} - #{list[1]}"
           end
-        else 
-          puts "Please enter the name of an artist:"
         end
       end
     end 
