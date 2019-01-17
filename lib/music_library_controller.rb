@@ -83,7 +83,7 @@ class MusicLibraryController
     def list_songs_by_genre 
       puts "Please enter the name of a genre:"
       user_input = gets.chomp
-      
+      binding.pry
       list_genres
       
       
