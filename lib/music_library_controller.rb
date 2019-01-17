@@ -24,7 +24,7 @@ class MusicLibraryController
       case user_input
       when "list songs"
         lists = Songs.all.map {|song| song.name}.sort
-        lists.each_with_index(1) {|list, idx| puts "#{idx}. #{list}" }
+        lists.each.with_index(1) {|list, idx| puts "#{idx}. #{list}" }
       when "list artists"
         artist
       when "list genres"
