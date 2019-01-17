@@ -42,7 +42,7 @@ class MusicLibraryController
     
     def list_songs
       #binding.pry
-      lists = Song.all.each do |song| 
+      lists = Song.all.map do |song| 
         song.name.sort.each.with_index(1) do |list, index|
           puts "#{index}. #{song.artist} - #{song.name} - #{song.genre}"
         end
