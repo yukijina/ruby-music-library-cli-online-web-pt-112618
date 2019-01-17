@@ -41,7 +41,11 @@ class MusicLibraryController
     end
     
     def make_a_list
-      
+      lists = []
+      Song.all.each do |song|
+        lists += [song.name, song.artist.name, song.genre.name]
+      end
+      list
     end
     
     
