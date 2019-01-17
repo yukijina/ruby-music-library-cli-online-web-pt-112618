@@ -67,13 +67,12 @@ class MusicLibraryController
       puts "Please enter the name of an artist:"
       user_input = gets.chomp
       
-      Song.all.each do |s| 
-        if s.artist.name == user_input 
-          
-          
+      lists = []
+      Song.all.each do |song|
+        if song.artist == user_input  
+          lists += [song.name, song.artist.name, song.genre.name]
         end
-      end    
-      
+      end
     end 
     
   end  #the end of call method    
