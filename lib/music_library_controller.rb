@@ -41,7 +41,7 @@ class MusicLibraryController
     end
     
     def list_songs
-      #binding.pry
+      binding.pry
       lists = Song.all.map do |song|
         song.sort 
         song
