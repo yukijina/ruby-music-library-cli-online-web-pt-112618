@@ -70,7 +70,7 @@ class MusicLibraryController
       lists = []
       Song.all.each do |song|
         if song.artist == user_input  
-          lists += [song.name, song.artist.name, song.genre.name]
+          lists += [song.name, song.genre.name]
         end
       end
     end 
