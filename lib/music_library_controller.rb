@@ -46,9 +46,9 @@ class MusicLibraryController
         lists += [song.name, song.artist.name, song.genre.name]
       end
       
-      sorted = tests.each_slice(3).map {|list| list}.sort
-      sorted.each.with_index(1) do |list, index|
-        puts "#{index}. #{list[1]} - #{list[0]} - #{list[2]}"
+      sorted = lists.each_slice(3).map {|list| list}.sort
+      sorted.each.with_index(1) do |val, index|
+        puts "#{index}. #{val[1]} - #{val[0]} - #{val[2]}"
       end
       
     end
