@@ -42,9 +42,13 @@ class MusicLibraryController
     
     def list_songs
       binding.pry
-      list = []
+      songs = []
+      artists = []
+      genres = []
       lists = Song.all.each do |song|
-        list << song.name, song.artist, song.genre
+        songs << song.name
+        artists << song.artist
+        genres << song.genre
       end
       list
       #sorted = Song.all.map {|song| song.name}.sort
