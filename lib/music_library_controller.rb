@@ -53,6 +53,21 @@ class MusicLibraryController
       end
       
     end
+
+    def list_artists
+      lists = []
+      Artist.all.each do |song|
+        lists += [song.name, song.artist.name, song.genre.name]
+      end
+      
+      sorted_lists = lists.each_slice(3).map {|list| list}.sort
+      sorted_lists.each.with_index(1) do |list, index|
+        puts "#{index}. #{list[1]} - #{list[0]} - #{list[2]}"
+      end
+      
+      
+      
+    end 
       
   end  #the end of call method    
   
