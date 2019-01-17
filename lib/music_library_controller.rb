@@ -55,7 +55,7 @@ class MusicLibraryController
       
       sorted = tests.each_slice(3).map {|list| list}.sort
       sorted.each.with_index(1) do |list, index|
-        puts "#{index}. #{list[1]} - #{list[0]} - #{list[3]}"
+        puts "#{index}. #{list[1]} - #{list[0]} - #{list[2]}"
       end
       
       #sorted = Song.all.map {|song| song.name}.sort
