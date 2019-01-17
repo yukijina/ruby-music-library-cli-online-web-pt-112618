@@ -41,9 +41,9 @@ class MusicLibraryController
     end
     
     def list_songs
-          lists = Songs.all.map {|song| song.name}.sort
-          lists.each.with_index(1) {|list, idx| puts "#{idx}. #{list}" }
-      end
+      lists = Songs.all.map {|song| song.name}.sort
+      lists.each.with_index(1) {|list, idx| puts "#{idx}. #{list}" }
+    end
     
   end 
   
