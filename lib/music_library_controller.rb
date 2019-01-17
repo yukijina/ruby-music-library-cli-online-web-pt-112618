@@ -63,7 +63,7 @@ class MusicLibraryController
       sorted.each.with_index(1) {|genre, index| puts "#{index}. #{genre}"}  
     end 
     
-    def list_songs_by_artist(artist_name)
+    def list_songs_by_artist
       
     end 
     
