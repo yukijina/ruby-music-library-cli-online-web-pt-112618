@@ -40,6 +40,10 @@ class MusicLibraryController
       
     end
     
+    def make_a_list
+      
+    end
+    
     
     def list_songs
       lists = []
