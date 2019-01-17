@@ -43,7 +43,7 @@ class MusicLibraryController
     def list_songs
       binding.pry
       list = []
-      lists = Song.all.map do |song|
+      lists = Song.all.each do |song|
         list << song.name, song.artist, song.genre
       end
       list
