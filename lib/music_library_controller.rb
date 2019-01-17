@@ -73,8 +73,6 @@ class MusicLibraryController
         puts "#{index}. #{list[1]} - #{list[0]} - #{list[2]}"
       end
       
-      
-      
     end 
       
   end  #the end of call method    
