@@ -45,10 +45,12 @@ class MusicLibraryController
       songs = []
       artists = []
       genres = []
+      tests = []
       lists = Song.all.each do |song|
         songs << song.name
         artists << song.artist.name
         genres << song.genre.name
+        tests += [song.name, song.artist.name, song.genre.name]
       end
       
       #sorted = Song.all.map {|song| song.name}.sort
