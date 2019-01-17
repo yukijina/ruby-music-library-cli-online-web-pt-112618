@@ -23,10 +23,7 @@ class MusicLibraryController
       user_input = gets.chomp
       case user_input
       when "list songs"
-        def list_songs
-          lists = Songs.all.map {|song| song.name}.sort
-          lists.each.with_index(1) {|list, idx| puts "#{idx}. #{list}" }
-        end
+        list_songs
       when "list artists"
         artist
       when "list genres"
@@ -40,6 +37,11 @@ class MusicLibraryController
       when "exit"
     
       end 
+      
+      def list_songs
+          lists = Songs.all.map {|song| song.name}.sort
+          lists.each.with_index(1) {|list, idx| puts "#{idx}. #{list}" }
+        end
     end
     
   end 
