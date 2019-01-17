@@ -69,7 +69,7 @@ class MusicLibraryController
       
       Song.all.each do |s| 
         if s.artist.name == user_input 
-          puts ""
+          
           
         end
       end    
