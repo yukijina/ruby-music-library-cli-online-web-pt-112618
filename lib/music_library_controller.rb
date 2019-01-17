@@ -72,7 +72,6 @@ class MusicLibraryController
         if song.artist == user_input  
           lists += [song.name, song.genre.name]
         end
-        list
       end
       
       sorted_lists = lists.each_slice(2).map {|list| list}.sort
