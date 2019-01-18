@@ -97,6 +97,11 @@ class MusicLibraryController
       end
     end 
     
+    def play_song
+      
+      
+    end 
+    
   end  #the end of call method    
   
 end 
