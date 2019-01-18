@@ -105,7 +105,7 @@ class MusicLibraryController
       
       list_songs.each.with_index(1) do |list, index|
         if index == user_input
-           puts "Playing #{} by #{}"
+           puts "Playing #{list[0]} by #{list[1]}"
         end
       end 
       
