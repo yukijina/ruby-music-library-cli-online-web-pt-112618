@@ -102,6 +102,9 @@ class MusicLibraryController
       user_input = gets.chomp
       
       
+      puts "Playing #{Larry Csonka} by Action Bronson"
+      
+      
     end 
     
   end  #the end of call method    
