@@ -85,7 +85,7 @@ class MusicLibraryController
       user_input = gets.chomp
       binding.pry
       lists = []
-      Song.all.each do |song|
+      Song.all.map do |song|
         if song.genre.name == user_input  
           lists += [song.name]
         end
