@@ -102,7 +102,7 @@ class MusicLibraryController
       user_input = gets.chomp
       index = user_input.to_i - 1
       song = list_songs[index]
-        puts "Playing #{song[0]} by #{song[1]}"
+      return puts "Playing #{song[0]} by #{song[1]}"
     end  
   end  #the end of call method    
   
