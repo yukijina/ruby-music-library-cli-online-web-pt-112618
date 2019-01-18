@@ -98,7 +98,7 @@ class MusicLibraryController
     end 
     
     def play_song
-      
+      user_input = gets.chopm
       
     end 
     
