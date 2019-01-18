@@ -101,7 +101,6 @@ class MusicLibraryController
       puts "Which song number would you like to play?"
       user_input = gets.chomp
       index = user_input.to_i - 1
-      list_songs[index]
         puts "Playing #{list_songs[index][0]} by #{list_songs[index][1]}"
     end  
   end  #the end of call method    
