@@ -101,7 +101,7 @@ class MusicLibraryController
       list_songs
       puts "Which song number would you like to play?"
       user_input = gets.chomp
-      binding.pry
+      #binding.pry
       
       list_songs.each.with_index(1) do |list, index|
         if index == user_input
