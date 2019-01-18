@@ -110,9 +110,7 @@ class MusicLibraryController
       sorted_lists = lists.each_slice(3).map {|list| list}.sort
       if index < sorted_lists.length
        puts "Playing #{sorted_lists[index][0]} by #{sorted_lists[index][1]}"
-      else
-        play_song 
-      end
+      
     end  
     
   end  #the end of call method    
