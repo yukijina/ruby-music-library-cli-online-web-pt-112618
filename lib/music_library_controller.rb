@@ -87,7 +87,7 @@ class MusicLibraryController
       
       sorted_lists = Song.all.map do |song|
         song.genre.name if song.genre.name == user_input  
-      end.sort
+      end.uniq.sort
       
       sorted_lists.each.with_index(1) do |list, index|
         puts "#{index}. #{list}"
