@@ -100,6 +100,7 @@ class MusicLibraryController
     def play_song
       user_input = gets.chomp
       
+      
     end 
     
   end  #the end of call method    
