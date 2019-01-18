@@ -101,10 +101,8 @@ class MusicLibraryController
       puts "Which song number would you like to play?"
       user_input = gets.chomp
       index = user_input.to_i - 1
-      #song = list_songs[index]
-      #puts "Playing #{song[0]} by #{song[1]}"
       
-       lists = []
+      lists = []
       Song.all.each do |song|
         lists += [song.name, song.artist.name, song.genre.name]
       end
