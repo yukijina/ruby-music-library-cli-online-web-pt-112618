@@ -100,14 +100,11 @@ class MusicLibraryController
     def play_song
       puts "Which song number would you like to play?"
       user_input = gets.chomp
-      
-      if user_input.is_a? Numeric && 
       index = user_input.to_i - 1
-      song = list_songs[index]
-      puts "Playing #{song[0]} by #{song[1]}"
-  
-    end 
-    
+      if list_songs[index] != nil
+        puts "Playing #{list_songs[index][0]} by #{list_songs[index][1]}"
+      end 
+    end  
   end  #the end of call method    
   
 end 
