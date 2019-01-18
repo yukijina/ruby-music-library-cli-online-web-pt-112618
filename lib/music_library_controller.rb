@@ -110,7 +110,8 @@ class MusicLibraryController
       end
       
       sorted_lists = lists.each_slice(3).map {|list| list}.sort
-      sorted_lists[index]
+      
+      puts "Playing #{song[0]} by #{song[1]}"
       
       
     end  
