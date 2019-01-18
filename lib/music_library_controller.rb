@@ -103,6 +103,11 @@ class MusicLibraryController
       user_input = gets.chomp
       binding.pry
       
+      list_songs.each do |list|
+        
+        
+      end 
+      
       puts "Playing #{} by #{}"
       
       
