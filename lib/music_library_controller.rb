@@ -84,7 +84,7 @@ class MusicLibraryController
       puts "Please enter the name of a genre:"
       user_input = gets.chomp
      #binding.pry
-      
+      lists = []
       Song.all.each do |song|
         if song.genre.name == user_input  
           lists += [song.name, song.artist.name]
