@@ -102,9 +102,8 @@ class MusicLibraryController
       user_input = gets.chomp
       
       index = user_input -1
-      list_songs[index]
-        if  == user_input
-           puts "Playing #{list[0]} by #{list[1]}"
+      song = list_songs[index]
+      puts "Playing #{song[0]} by #{song[1]}"
         end
       end 
       
