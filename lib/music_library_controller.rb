@@ -101,8 +101,18 @@ class MusicLibraryController
       puts "Which song number would you like to play?"
       user_input = gets.chomp
       index = user_input.to_i - 1
-      song = list_songs[index]
-      return puts "Playing #{song[0]} by #{song[1]}"
+      #song = list_songs[index]
+      #puts "Playing #{song[0]} by #{song[1]}"
+      
+       lists = []
+      Song.all.each do |song|
+        lists += [song.name, song.artist.name, song.genre.name]
+      end
+      
+      sorted_lists = lists.each_slice(3).map {|list| list}.sort
+      sorted_lists[index]
+      
+      
     end  
   end  #the end of call method    
   
