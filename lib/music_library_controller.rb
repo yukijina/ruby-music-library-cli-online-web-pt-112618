@@ -103,7 +103,8 @@ class MusicLibraryController
       user_input = gets.chomp
       binding.pry
       
-      list_songs.each do |list|
+      list_songs.each.with_index(1) do |list, index|
+        if index == user_input.to_i
         
         
       end 
