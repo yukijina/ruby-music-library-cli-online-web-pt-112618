@@ -102,8 +102,8 @@ class MusicLibraryController
       user_input = "" 
       while user_input != 'exit'
       user_input = gets.chomp
-      
       index = user_input.to_i - 1
+      
       song = list_songs[index]
       puts "Playing #{song[0]} by #{song[1]}"
       
