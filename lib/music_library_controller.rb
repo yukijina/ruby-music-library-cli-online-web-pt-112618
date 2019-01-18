@@ -104,13 +104,10 @@ class MusicLibraryController
       binding.pry
       
       list_songs.each.with_index(1) do |list, index|
-        if index == user_input.to_i
-        
-        
+        if index == user_input
+           puts "Playing #{} by #{}"
+        end
       end 
-      
-      puts "Playing #{} by #{}"
-      
       
     end 
     
