@@ -48,7 +48,7 @@ class MusicLibraryController
       
       sorted_lists = lists.each_slice(3).map {|list| list}.sort
       sorted_lists.each.with_index(1) do |list, index|
-        puts "#{index}. #{list[1]} - #{list[0]} - #{list[2]}"
+         "#{index}. #{list[1]} - #{list[0]} - #{list[2]}"
       end
       
     end
