@@ -103,7 +103,7 @@ class MusicLibraryController
       user_input = gets.chomp
       
       
-      puts "Playing #{} by Action Bronson"
+      puts "Playing #{} by #{}"
       
       
     end 
