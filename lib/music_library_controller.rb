@@ -104,8 +104,6 @@ class MusicLibraryController
       index = user_input -1
       song = list_songs[index]
       puts "Playing #{song[0]} by #{song[1]}"
-        end
-      end 
       
     end 
     
