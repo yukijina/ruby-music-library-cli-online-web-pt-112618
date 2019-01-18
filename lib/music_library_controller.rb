@@ -84,16 +84,13 @@ class MusicLibraryController
       puts "Please enter the name of a genre:"
       user_input = gets.chomp
       binding.pry
-      lists = []
-      Song.all.map do |song|
-        if song.genre.name == user_input  
-          lists += [song.name]
-        end
-      end
       
-      sorted_lists = lists.each_slice(2).map {|list| list}.sort
+      sorted_lists = Song.all.map do |song|
+        song.genre.name if song.genre.name == user_input  
+      end.sort
+      
       sorted_lists.each.with_index(1) do |list, index|
-        puts "#{index}. #{list[0]} - #{list[1]}"
+        puts "#{index}. #{list}"
       end
     end 
     
